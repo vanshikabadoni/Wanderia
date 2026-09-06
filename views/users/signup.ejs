@@ -1,0 +1,31 @@
+<% layout("/layouts/boilerplate") %>
+
+<body>
+    <h1 class="col-6 offset-3">SignUp for Wanderia</h1>
+    <div class ="row mt-3">
+        <div class="col-6 offset-3">
+            <form method="post" action="/user/signup" class="needs-validation" novalidate>
+                <div class="mb-3">
+                    <label class="form-label">Email Address</label>
+                    <input type="email" name="email" placeholder="email" class="form-control"  required>
+                    <div class= "invalid-feedback">Enter a valid Email</div>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Username</label>
+                    <input type="text" name="username" placeholder="Username" class="form-control" required>
+                    <div class= "invalid-feedback">Enter valid username</div>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Password</label>
+                    <input type="password" name="password" placeholder="Password" class="form-control" required>
+                    <div class= "invalid-feedback">Kindly enter a strong password</div>
+                </div>
+                <div>
+                    <button class="btn btn-success mb-3">SignUp</button>
+                </div>
+            </form>
+         
+
+        </div>
+    </div>
+</body>
