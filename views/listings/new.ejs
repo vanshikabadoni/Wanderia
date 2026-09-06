@@ -1,7 +1,7 @@
 <%layout("/layouts/boilerplate") %>
-<body>
+
     <div class="row">
-        <div class="col-8" offset-2>
+        <div class="col-8 offset-2">
     
     <h3>Add New Place </h3>
     <form method="POST" action="/listings"  class=" needs-validation" novalidate enctype="multipart/form-data">
@@ -37,7 +37,7 @@
          <input name="listing[price]" placeholder="price"  class="form-control"  required>
          <div class="invalid-feedback">
          Please provide a Price.
-         </div
+         </div>
        </div>
 
         <div class="mb-3 col-md-8">
@@ -45,7 +45,7 @@
          <input name="listing[country]" placeholder="Enter country" type="text" class="form-control"  required>
          <div class="invalid-feedback">
          Please provide a valid Country name.
-         </div
+         </div>
         </div>
        </div>
       
@@ -54,7 +54,7 @@
             <input name="listing[location]" placeholder="Enter location" type="text" class="form-control"  required>
             <div class="invalid-feedback">
             Please provide accurate location.
-           </div
+            </div>
         </div>
         
         <br><br>
@@ -65,4 +65,3 @@
 
     </form>
     </div></div>
-</body>

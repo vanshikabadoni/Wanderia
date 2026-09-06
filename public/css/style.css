@@ -4,6 +4,8 @@ body{
     display:flex;
     flex-direction: column;
     min-height: 100vh;
+    margin: 0;
+    overflow-x: hidden;
 }
 .container{
     flex:1;
@@ -33,11 +35,14 @@ color:#222222;
 }
 .f-info{
     height:8rem;
+     width: 100% !important;
+      margin: 0;
+    box-sizing: border-box;
     background-color: #ebebeb;
     display:flex;
     flex-wrap:wrap ;
     justify-content: center;
-    align-items:space-evenly;
+    align-items:center;
     text-align: center;
 }
 .f-info-links,.f-info-socials,.f-info-brand{
@@ -50,6 +55,15 @@ justify-content: center;
     margin-right:1.2rem;
      font-size: 1.3rem;
 }
+footer{
+      width: 100vw !important;
+    margin-left: calc(50% - 50vw);
+}
+.f-info-socials a {
+    color: #222222;
+    text-decoration: none;
+}
+
 
 /* CARDSSSSSS */
 .listing-card{
